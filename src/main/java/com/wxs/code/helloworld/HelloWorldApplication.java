@@ -15,7 +15,7 @@ public class HelloWorldApplication {
 
     @GetMapping("t1")
     public String aa() {
-        return "t1" + System.currentTimeMillis();
+        return "update-t1" + System.currentTimeMillis();
     }
 
     @GetMapping("t2")
