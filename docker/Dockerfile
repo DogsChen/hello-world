@@ -5,7 +5,7 @@ FROM ubuntu-jdk21:1.0
 WORKDIR /app
 
 # 将当前目录下的文件复制到镜像中
-COPY ../target/hello-world-1.0.jar /app
+COPY hello-world-1.0.jar /app
 
 
 # 暴露容器端口，如果你的应用需要
