@@ -22,6 +22,10 @@ public class HelloWorldApplication {
     public String t2(HttpServletRequest request) {
         return "t2" + request.getHeaderNames() + "-" + System.currentTimeMillis();
     }
+    @GetMapping("t3")
+    public String t3(HttpServletRequest request) {
+        return "t3" + request.getHeaderNames() + "-" + System.currentTimeMillis();
+    }
 
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(HelloWorldApplication.class, args);
