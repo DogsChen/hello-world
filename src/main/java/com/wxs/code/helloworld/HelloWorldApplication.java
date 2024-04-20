@@ -36,6 +36,10 @@ public class HelloWorldApplication {
     public String t5(HttpServletRequest request) {
         return "t5" + request.getRequestURL() + "-" + System.currentTimeMillis();
     }
+    @GetMapping("t6")
+    public String t6(HttpServletRequest request) {
+        return "t6-" + request.getRequestURL() + "-" + System.currentTimeMillis();
+    }
 
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(HelloWorldApplication.class, args);
