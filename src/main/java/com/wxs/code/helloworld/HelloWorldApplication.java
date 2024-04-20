@@ -27,6 +27,11 @@ public class HelloWorldApplication {
         return "t3" + request.getHeaderNames() + "-" + System.currentTimeMillis();
     }
 
+    @GetMapping("t4")
+    public String t4(HttpServletRequest request) {
+        return "t4" + request.getRequestURL() + "-" + System.currentTimeMillis();
+    }
+
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(HelloWorldApplication.class, args);
         ConfigurableEnvironment environment = run.getEnvironment();
