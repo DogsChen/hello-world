@@ -17,11 +17,11 @@ public class HelloWorldApplication {
     public String aa() {
         return "update-t1" + System.currentTimeMillis();
     }
-//
-//    @GetMapping("t2")
-//    public String t2(HttpServletRequest request) {
-//        return "t2" + request.getHeaderNames() + "-" + System.currentTimeMillis();
-//    }
+
+    @GetMapping("t2")
+    public String t2(HttpServletRequest request) {
+        return "t2" + request.getHeaderNames() + "-" + System.currentTimeMillis();
+    }
 //    @GetMapping("t3")
 //    public String t3(HttpServletRequest request) {
 //        return "t3" + request.getHeaderNames() + "-" + System.currentTimeMillis();
