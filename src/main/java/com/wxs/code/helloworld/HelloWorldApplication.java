@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldApplication {
 
 
+    @GetMapping("t")
+    public String t() {
+        return "now：" + System.currentTimeMillis();
+    }
+
     @GetMapping("t1")
     public String aa() {
         return "update-t1" + System.currentTimeMillis();
