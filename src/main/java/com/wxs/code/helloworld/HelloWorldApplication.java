@@ -14,13 +14,13 @@ public class HelloWorldApplication {
 
 
     @GetMapping("t")
-    public String t() {
-        return "now：" + System.currentTimeMillis();
+    public String t(String name) {
+        return "now："+name +" - " + System.currentTimeMillis();
     }
 
     @GetMapping("t1")
-    public String aa() {
-        return "update-t1" + System.currentTimeMillis();
+    public String aa(Integer age) {
+        return "t1- "+age+" - " + System.currentTimeMillis();
     }
 
     @GetMapping("t2")
