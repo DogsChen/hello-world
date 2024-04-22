@@ -6,6 +6,7 @@ WORKDIR /app
 
 # 将当前目录下的文件复制到镜像中
 COPY ./hello-world-1.0.jar /app
+COPY ./arthas-boot.jar /app
 
 
 # 暴露容器端口，如果你的应用需要
