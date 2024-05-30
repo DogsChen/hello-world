@@ -1,5 +1,5 @@
-# 使用官方的Ubuntu 24.04镜像作为基础镜像
-FROM ubuntu-jdk21:1.0
+# 使用官方的openjdk:21镜像作为基础镜像
+FROM openjdk:21
 
 # 设置工作目录
 WORKDIR /app
